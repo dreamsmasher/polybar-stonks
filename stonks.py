@@ -17,12 +17,6 @@ base_currency = config['base_currency']
 APIKey = config['APIKey']
 display = config['display']
 
-# currencies = (config['general']['coins'])
-# base_currency = config['general']['base_currency']
-# APIKey = config['general']['APIKey']
-# display = config['general']['display']
-# decimalpoints = config['general']['decimalpoints']
-
 if display == 'percent' or display == 'both':
     percents = True
     aliases = {'day': ['percent_change_24h', '24h'],
