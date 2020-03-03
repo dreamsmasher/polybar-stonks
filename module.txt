@@ -1,0 +1,5 @@
+[module/stonks]
+type=custom/script
+interval=300
+exec = ~/.config/polybar/stonks/stonks.py
+
