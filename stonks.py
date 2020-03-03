@@ -16,7 +16,6 @@ currencies = config['coins']
 base_currency = config['base_currency']
 APIKey = config['APIKey']
 display = config['display']
-decimalpoints = int(config['decimalpoints'])
 
 # currencies = (config['general']['coins'])
 # base_currency = config['general']['base_currency']
@@ -46,7 +45,7 @@ try:
     data = json.loads(response.text)['data']
     for currency in currencies.split(','):
         local_price = data[currency]['quote'][base_currency]['price']
-        local_price = round(float(local_price), decimalpoints)
+        local_price = round(float(local_price), 3)
         sys.stdout.write(f'[{currency}] {local_price} ')
         if percents == True: 
             for opt in percentchg:
