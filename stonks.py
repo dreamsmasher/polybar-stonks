@@ -49,5 +49,4 @@ try:
                 sys.stdout.write(f'{opt[1]}: {change}% ')
 
 except (ConnectionError, Timeout, TooManyRedirects) as e:
-    sys.stdout.write(e)
-
+    sys.stdout.write(f'Stonks Unavailable :(')
