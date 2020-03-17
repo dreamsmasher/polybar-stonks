@@ -13,10 +13,10 @@ The module updates every 300 seconds by default. This is due to API limitations 
 ```
 git clone https://github.com/dreamsmasher/polybar-stonks.git ~/.config/polybar/stonks
 cd ~/.config/polybar/stonks
-cat module.txt >> ../modules.ini
+./install.sh
 ```
 
-Now, just add `stonks` to your modules in your `config.ini`. Enjoy!
+Now, just add `stonks` to your `config.ini`. Enjoy!
 
 
 
